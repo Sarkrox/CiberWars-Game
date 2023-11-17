@@ -1,39 +1,129 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Ciberwars - Página de Inicio</title>    
-    <meta name="viewport" content="width=device-width, initial-scale=1">    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.c
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Ciberwars - Página de Inicio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
+    <style>
+        body {
+            background-color: #020202; /* Fondo negro */
+            color: #b1b1b1; /* Texto gris claro */
+            font-family: 'Press Start 2P', cursive; /* Fuente estilo videojuego retro */
+            padding-top: 60px; /* Asegura que el contenido no se oculte detrás de la barra de navegación superior */
+        }
 
+        header {
+            background-color: #000; /* Fondo negro para el encabezado */
+            padding: 20px 0;
+        }
+
+        h1, h2 {
+            color: #66fcf1; /* Texto turquesa para los títulos */
+        }
+
+        .buttons-section {
+            margin-top: 30px;
+        }
+
+        .button {
+            color: #000;
+            background-color: #66fcf1;
+            border: 2px solid #45a29e;
+            padding: 10px 20px;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 18px;
+            margin-right: 10px;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .button:hover {
+            background-color: #45a29e;
+            transform: scale(1.1);
+        }
+
+        .video-section {
+            margin-top: 30px;
+        }
+
+        .images-section {
+            margin-top: 30px;
+        }
+
+        .img-fluid {
+            border: 2px solid #45a29e;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .img-fluid:hover {
+            transform: scale(1.1);
+        }
+
+        .btn-noticias {
+            margin-top: 20px;
+        }
+
+        .btn-noticias .btn {
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .btn-noticias .btn:hover {
+            transform: scale(1.1);
+        }
+    </style>
 </head>
 <body>
-    <header>
+    <header class="text-center">
         <h1>Bienvenido a Ciberwars</h1>
     </header>
 
-     <!-- Agrega botones de redirección -->
-<section class="buttons-section">
-    <a href="descargas.html" class="button">Descargar</a>
-    <a href="contacto.html" class="button">Contacto</a>    
-</section>
+    <div class="container mt-4">
+        <section class="buttons-section text-center">
+            <a href="descargas.html" class="btn btn-primary mr-2">Descargar</a>
+            <a href="contacto.html" class="btn btn-secondary">Contacto</a>
+        </section>
 
-    <section class="video-section">
-        <h2>Teaser</h2>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/8WxsaXpgJpI?si=MZqbt65LAV1POOwj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>        
-    </section>
+        <section class="video-section mt-4">
+            <h2 class="text-center">Teaser</h2>
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/8WxsaXpgJpI?si=MZqbt65LAV1POOwj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </section>
 
-    <section class="images-section">
-        <h2>Imágenes del Juego</h2>
-        <img src="assets/img/ciudad.png" alt="Captura de pantalla 1">
-        <img src="assets/img/Fondofuturista.jpg" alt="Captura de pantalla 2">
-        <img src="assets/img/guerreros.png" alt="Captura de pantalla 3">
-        <img src="assets/img/desperation.png" alt="Captura de pantalla 4">
-        <img src="assets/img/lider.png" alt="Captura de pantalla 5">
-    </section>
+        <section class="images-section mt-4">
+            <h2 class="text-center">Imágenes del Juego</h2>
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <img src="assets/img/ciudad.png" alt="Captura de pantalla 1" class="img-fluid">
+                </div>
+                <div class="col-md-4 mb-3">
+                    <img src="assets/img/Fondofuturista.jpg" alt="Captura de pantalla 2" class="img-fluid">
+                </div>
+                <div class="col-md-4 mb-3">
+                    <img src="assets/img/guerreros.png" alt="Captura de pantalla 3" class="img-fluid">
+                </div>
+                <div class="col-md-4 mb-3">
+                    <img src="assets/img/desperation.png" alt="Captura de pantalla 4" class="img-fluid">
+                </div>
+                <div class="col-md-4 mb-3">
+                    <img src="assets/img/lider.png" alt="Captura de pantalla 5" class="img-fluid">
+                </div>
+            </div>
+        </section>
 
-   
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    
+        <!-- Botón de Noticias -->
+        <div class="text-center btn-noticias">
+            <a href="noticias.html" class="btn btn-info">Noticias</a>
+        </div>
+    </div>
+
+    <!-- Agrega la biblioteca Bootstrap JavaScript al final del cuerpo del documento para un rendimiento óptimo -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>

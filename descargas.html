@@ -1,36 +1,91 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Descargas - Ciberwars</title>
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        body {
+            background: url('assets/img/ciudad.png') no-repeat center center fixed;
+            background-color: rgba(0, 0, 0, 0.8); /* Fondo negro semi-transparente para el encabezado */
+            background-size: cover;
+            color: #b1b1b1; /* Texto gris claro */
+            font-family: 'Press Start 2P', cursive; /* Fuente estilo videojuego retro */
+            padding-top: 60px; /* Asegura que el contenido no se oculte detrás de la barra de navegación superior */
+        }
+
+        header {
+            background-color: #000; /* Fondo negro para el encabezado */
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        h1, h2 {
+            color: #66fcf1; /* Texto turquesa para los títulos */
+            transition: transform 0.3s ease-in-out; /* Agrega una transición para el efecto de zoom */
+        }
+
+        h1:hover, h2:hover {
+            transform: scale(1.1); /* Zoom al pasar el puntero */
+        }
+
+        .download-links {
+            margin: 30px 0;
+            text-align: center;
+        }
+
+        .download-button {
+            color: #000;
+            background-color: #66fcf1;
+            border: 2px solid #45a29e;
+            padding: 10px 20px;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 18px;
+            margin: 10px;
+            transition: background-color 0.3s ease-in-out; /* Agrega una transición para el cambio de color al pasar el mouse */
+        }
+
+        .download-button:hover {
+            background-color: #45a29e;
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>Descargas</h1>
     </header>
 
-    <section class="download-links">
-        <h2>Descarga el Juego</h2>
-        <p>Elige la plataforma para la que deseas descargar Ciberwars:</p>
-        
-        <ul>
-            <li>
-                <a href="enlace-de-descarga-windows.exe" class="download-button">
-                    Descargar para Windows
-                </a>
-            </li>
-            <li>
-                <a href="enlace-de-descarga-macos.dmg" class="download-button">
-                    Descargar para macOS
-                </a>
-            </li>
-            <li>
-                <a href="enlace-de-descarga-linux.tar.gz" class="download-button">
-                    Descargar para Linux
-                </a>
-            </li>
-        </ul>
-    </section>
+    <div class="container">
+        <section class="download-links">
+            <h2>Descarga el Juego</h2>
+            <p>Elige la plataforma para la que deseas descargar Ciberwars:</p>
+
+            <ul class="list-unstyled">
+                <li>
+                    <a href="enlace-de-descarga-windows.exe" class="btn btn-primary btn-lg download-button">
+                        Descargar para Windows
+                    </a>
+                </li>
+                <li>
+                    <a href="enlace-de-descarga-macos.dmg" class="btn btn-primary btn-lg download-button">
+                        Descargar para macOS
+                    </a>
+                </li>
+                <li>
+                    <a href="enlace-de-descarga-linux.tar.gz" class="btn btn-primary btn-lg download-button">
+                        Descargar para Linux
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </div>
+
+    <!-- Agrega la biblioteca Bootstrap JavaScript al final del cuerpo del documento para un rendimiento óptimo -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
+
